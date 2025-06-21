@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe9aa4f-74b8-4f4a-8546-4f1ab87fd214" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MoreSkins/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MoreSkins/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config.Build.user.props.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoreSkins/MoreSkins.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoreSkins/MoreSkins.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoreSkins/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoreSkins/Plugin.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6fe9aa4f-74b8-4f4a-8546-4f1ab87fd214" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +75,7 @@
       <updated>1750510849986</updated>
       <workItem from="1750510851642" duration="75000" />
       <workItem from="1750510950967" duration="5961000" />
-      <workItem from="1750519332648" duration="8370000" />
+      <workItem from="1750519332648" duration="8681000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -90,7 +85,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750511073073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added more colors!">
+      <option name="closed" value="true" />
+      <created>1750528115022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750528115022</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Little bit of cleanup before release">
+      <option name="closed" value="true" />
+      <created>1750528216937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750528216937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +115,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added more colors!" />
+    <MESSAGE value="Little bit of cleanup before release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little bit of cleanup before release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
