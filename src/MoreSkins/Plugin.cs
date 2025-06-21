@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Reflection;
 using BepInEx;
-using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
-using static Photon.Pun.PhotonNetwork;
 
 namespace MoreSkins;
 [BepInAutoPlugin]
@@ -23,16 +20,6 @@ public partial class Plugin : BaseUnityPlugin
             customization.skins = customization.skins.AddToArray(skinOption);
             return true;
         }
-
-        /*private static bool CreateTab(PassportManager passportManager, string name)
-        {
-            if (Array.Exists(passportManager.tabs, tab => tab.name == name)) return false;
-            var tab = passportManager.uiObject.AddComponent<PassportTab>();
-            tab.type = Customization.Type.Fit;
-            tab.name = name;
-            tab.anim = passportManager.anim;
-            return true;
-        }*/
         
         [HarmonyPatch(typeof(PassportManager), "Awake")]
         [HarmonyPostfix]
@@ -49,29 +36,10 @@ public partial class Plugin : BaseUnityPlugin
             
         }
     }
-    
-    
-    private MethodInfo? getCustomizationMethod;
-    private MethodInfo? setCustomizationMethod;
     private readonly Harmony _harmony = new("com.ratherchaotic.moreskins");
     private void Awake()
     {
-        var customizationType = typeof(CharacterCustomization);
-        getCustomizationMethod = customizationType.GetMethod("GetCustomization", BindingFlags.Public | BindingFlags.Static);
-        setCustomizationMethod = customizationType.GetMethod("SetCustomization", BindingFlags.Public | BindingFlags.Static);
         _harmony.PatchAll(typeof(Patcher));
-    }
-
-    private void Update()
-    {
-        {
-            var player = LocalPlayer;
-            var customizationData = (CharacterCustomizationData)getCustomizationMethod!.Invoke(null, new object[] { player});
-            customizationData.currentSkin = 9;
-            
-            setCustomizationMethod!.Invoke(null, new object[] { customizationData, player });
-            
-        }
     }
 
 }

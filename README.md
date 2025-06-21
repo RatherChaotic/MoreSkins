@@ -1,7 +1,4 @@
 # MoreSkins
 
-Describe your project here!
-
-## Using this Template
-
-Template Users: Make sure to remove this section after you create your project!
+Adds a few more skin colors to the game.
+Created by RatherChaotic.
